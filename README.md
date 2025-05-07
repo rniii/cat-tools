@@ -1,9 +1,14 @@
-# Development
+# cat tools
+
+## Development
 
 <!-- maid-tasks -->
 
-## build
+### build
+
+Compile with [nolibc](https://github.com/torvalds/linux/blob/master/tools/include/nolibc/nolibc.h)
 
 ```sh
-musl-clang -static -O3 xd.c -o xd
+cc -m32 -fno-asynchronous-unwind-tables -fno-ident -nostdlib -Inolibc \
+  -Os -s xd.c -o xd
 ```
