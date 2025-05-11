@@ -1,0 +1,14 @@
+Usage: xd [options] [file]
+
+Options:
+  -w {8,16,32,..}  display this many bytes per line (default: auto)
+  -s[-]seek   start at this position
+  -c[-]count  output this many bytes
+
+Grouping    Base
+
+-0  none    -n  none
+-1  8-bit   -x  hexadecimal
+-2  16-bit  -d  decimal
+-4  32-bit  -o  octal
+-8  64-bit

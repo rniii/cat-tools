@@ -1,1 +1,7 @@
 .ccls-cache/
+pkg/
+xd
+xd.o
+xd.1
+
+*.tar.zst
