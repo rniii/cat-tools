@@ -20,6 +20,7 @@ CFLAGS="$CFLAGS -std=c23 -Wunused"
 
 cc $CFLAGS -nostdlib -Inolibc xd.c -c -o xd.o
 ld $LDFLAGS xd.o -o xd
+strip xd -R .comment
 
 maid manual
 ```
@@ -27,11 +28,12 @@ maid manual
 ### manual
 
 ```sh
-pandoc -t man man/xd.md -o xd.1
+pandoc -st man man/xd.md -o xd.1
 ```
 
 ### package
 
 ```sh
-install -Dm755 xd "$dstdir/bin/xd"
+install -Dm755 xd   "$dstdir/bin/xd"
+install -Dm644 xd.1 "$dstdir/share/man/man1/xd.1"
 ```

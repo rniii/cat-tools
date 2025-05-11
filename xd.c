@@ -15,7 +15,7 @@ static ssize_t page, count, skip;
 const char c_null[5]  = SGR("90");
 const char c_lo[5]    = SGR("36");
 const char c_md[5]    = SGR("37");
-const char c_hi[5]    = SGR("97");
+const char c_hi[5]    = SGR("32");
 const char c_reset[5] = SGR("00");
 
 const char usage[] = {
