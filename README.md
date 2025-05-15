@@ -23,6 +23,8 @@ ld $LDFLAGS xd.o -o xd
 strip xd -R .comment
 
 maid manual
+
+wc -c xd
 ```
 
 ### manual

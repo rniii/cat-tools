@@ -45,7 +45,6 @@ on terminal width.
 
     **-n**  none, disable numeric output
     **-x**  hexadecimal  
-    **-d**  decimal  
     **-o**  octal  
 
 **-[01248]**
@@ -67,10 +66,10 @@ Default output style (-x -2 -8)
 Group four byte words
 
     $ xd -4 xd
-    7f454c46 010101·  · · · ·  · · · ·  ?ELFAAA·········
-    02· 3e·  01· · ·  d60220·  34· · ·  B·>·A···⢮B␣·4···
-    740c· ·  · · · ·  34· 20·  02· 28·  tL······4·␣·B·(·
-    06· 05·  01· · ·  80· · ·  80· 20·  F·E·A···⢀···⢀·␣·
+    7f454c46 010101╶╴ ╶╴╶╴╶╴╶╴ ╶╴╶╴╶╴╶╴ ?ELFAAA·········
+    02╶╴3e╶╴ 01╶╴╶╴╶╴ b20220╶╴ 34╶╴╶╴╶╴ B·>·A···⢚B⍽·4···
+    f80a╶╴╶╴ ╶╴╶╴╶╴╶╴ 34╶╴20╶╴ 02╶╴28╶╴ ⣸J······4·⍽·B·(·
+    06╶╴05╶╴ 01╶╴╶╴╶╴ 80╶╴╶╴╶╴ 80╶╴20╶╴ F·E·A···⢀···⢀·⍽·
 
 Just pretty-print bytes
 
@@ -84,7 +83,7 @@ Every byte
 
     $ ruby -e '$><<[*0..255].pack("C"*256)' >test
     $ xd test
-    · 01 0203 0405 0607  0809 0a0b 0c0d 0e0f  ·ABCDEFGHIJKLMNO
+    ╶╴01 0203 0405 0607  0809 0a0b 0c0d 0e0f  ·ABCDEFGHIJKLMNO
     1011 1213 1415 1617  1819 1a1b 1c1d 1e1f  PQRSTUVWXYZ[\]^_
     2021 2223 2425 2627  2829 2a2b 2c2d 2e2f  ␣!"#$%&'()*+,-./
     3031 3233 3435 3637  3839 3a3b 3c3d 3e3f  0123456789:;<=>?
